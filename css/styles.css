@@ -1,12 +1,9 @@
 
-@media only screen and (max-width: 375px){
-    .text,.submit{
-        width: 100%;
-    }
-}
+
 *{
     font-family: 'Libre Franklin', sans-serif;
 }
+
 .all{
     margin: auto;
 }
@@ -33,17 +30,8 @@
     color:hsl(0, 0%, 0%);
 }
 
-.container{
-    width: 400px;
-    margin: auto;
-    margin-top: 50px;
-}
 
-.text{
-    height: 40px;
-    width: 67%;
-    float: left;
-}
+
 
 #errorHidden{
     font-size: xx-small;
@@ -60,6 +48,7 @@
 }
 
 #email{
+    
     border-color: hsl(223, 100%, 88%);
     border-style: solid;
     border-width: 1px;
@@ -77,12 +66,6 @@
     border-style: none;
     cursor: pointer;
     box-shadow: 0px 5px hsla(223, 87%, 63%, 0.103);
-}
-
-.submit{
-    width: 30%;
-    height: 40px;
-    float: right;
 }
 
 img{
@@ -125,4 +108,37 @@ footer{
 footer p{
     font-size: xx-small;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 375px){
+    .text,.submit{
+        height: 30px;
+        width: 100%;
+        float: none;
+        padding: 10px 0px;
+    }
+    .container{
+        width: 300px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 376px){
+    .text{
+        height: 30px;
+        width: 67%;
+        float: left;
+    }
+    .submit{
+        width: 30%;
+        height: 30px;
+        float: right;
+    }
+
+    .container{
+        width: 400px;
+        margin: auto;
+        margin-top: 50px;
+    }
 }
